@@ -4,12 +4,12 @@
   --slidev-theme-primary: #5d8392;
 }
 
-.slidev-layout.cover,
-.slidev-layout.intro {
+.slidev-layout {
   @apply h-full grid;
+  /* @apply tracking-wide; */
 
   h1 {
-    @apply text-6xl leading-20;
+    @apply text-6xl leading-20 font-normal;
   }
 
   h1 + p {
@@ -23,10 +23,14 @@
   }
 
   h3 {
-    @apply text-sm pt-2 uppercase tracking-widest font-500 -ml-[0.05em];
+    @apply text-sm pt-2 uppercase tracking-widest font-500 -ml-[0.05em] font-normal;
   }
 
   h3:not(.opacity-100) {
     @apply opacity-40;
+  }
+
+  strong {
+    @apply font-semibold;
   }
 }
